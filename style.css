@@ -156,7 +156,7 @@ ul {
 /* Navbar-Responsive */
 
 
-.navbar-links .icon {
+.icon {
     display: none;
 
 }
@@ -496,6 +496,7 @@ i {
     }
 
     .icon {
+        display: block;
         margin: 1.5rem 1rem;
     }
 
@@ -504,7 +505,7 @@ i {
         display: none;
     }
 
-    .navbar-links {
+    /* .navbar-links {
         display: inline-block;
         height: 100vh;
         position: absolute;
@@ -512,7 +513,7 @@ i {
         right: 0;
         border-radius: 10px;
         background-color: #1F2025;
-    }
+    } */
 
     .navbar-links li a {
         display: block;
@@ -580,6 +581,12 @@ i {
 
     .welcome-text {
         margin: 0;
+    }
+
+    .welcome-button {
+        padding: 1rem .6rem;
+        width: fit-content;
+        margin: 1rem 0;
     }
 
     .why-workout {
