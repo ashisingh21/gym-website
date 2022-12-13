@@ -5,6 +5,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    width: 100%;
+}
+
 .heading {
 
     font-size: 2.3rem;
@@ -55,7 +59,7 @@ li {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: .9rem 1rem;
     text-decoration: none;
 }
 
@@ -107,15 +111,15 @@ li a:hover {
 #mySidenav a {
     text-align: center;
     position: fixed;
-    right: -90px;
+    right: -6rem;
     transition: 0.3s;
     padding: .5rem 0 .5rem 2rem;
-    width: 90px;
+    width: 5rem;
     text-decoration: none;
     color: white;
-    border-radius: 10px;
+    border-radius: .8rem;
     border-color: aliceblue;
-    border: 1px solid;
+    border: .1rem solid;
 }
 
 .sidenav a i {
@@ -131,17 +135,17 @@ li a:hover {
 
 
 #about {
-    bottom: 20px;
+    bottom: 1rem;
     background-color: #D7393E;
 }
 
 #blog {
-    bottom: 65px;
+    bottom: 3.9rem;
     background-color: #1F2025;
 }
 
 #projects {
-    bottom: 110px;
+    bottom: 6.9rem;
     background-color: #FFB546;
 }
 
@@ -151,7 +155,7 @@ li a:hover {
     padding-top: 5rem;
 
 
-    height: 650px;
+    height: 42rem;
     background-image: url(images/hero-section-background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -168,7 +172,7 @@ li a:hover {
 .hero-section-heading {
     font-size: 4.5rem;
     margin-bottom: 2.5rem;
-    margin-top: 150px;
+    margin-top: 12rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     line-height: 1.2;
@@ -317,7 +321,7 @@ i {
 
     background-image: url("https://images.unsplash.com/photo-1580086319619-3ed498161c77?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
 
-    min-height: 400px;
+    min-height: 36rem;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -446,4 +450,119 @@ i {
     font-size: 1rem;
     color: #FFB546;
 
+}
+
+
+@media screen and (max-width: 480px) {
+
+
+
+
+
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+
+    .hero-section {
+        background-position: center;
+        background-image: url(https://images.unsplash.com/photo-1590487988256-9ed24133863e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=428&q=80);
+        padding-top: 3rem;
+        align-items: center;
+        width: auto;
+    }
+
+    .hero-section-text {
+        margin: 2rem;
+    }
+
+
+
+    .hero-section-heading {
+        font-size: 2rem;
+        margin: 9rem .5rem .5rem;
+
+    }
+
+    .welcome {
+        flex-direction: column;
+        margin: 2.5rem;
+    }
+
+    .welcome-text {
+        margin: 0;
+    }
+
+    .why-workout {
+        padding: 2.5rem;
+    }
+
+    .why-workout-items {
+        flex-direction: column;
+    }
+
+
+    .why-workout-item {
+        margin: 2rem 0;
+    }
+
+    .testimonial-items {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .testimonial-section {
+        margin: 4rem;
+    }
+
+    .testimonial-item {
+        margin: 2rem 0;
+    }
+
+    .classes {
+        padding: 4rem;
+    }
+
+    .classes-images {
+        flex-direction: column;
+    }
+
+    .classes-image {
+        margin: 2rem 0;
+        max-width: 100%;
+        position: relative;
+        overflow: auto;
+    }
+
+    .social {
+        margin: 2rem;
+    }
+
+    .numbers {
+        flex-direction: column;
+        padding: 2.5rem;
+    }
+
+    .num-desc {
+        color: antiquewhite;
+        font-size: 1.2rem;
+    }
+
+    .number-col {
+        margin: 2rem 0;
+    }
+
+    .visit-us {
+        flex-direction: column;
+        margin: 2rem 2rem 0;
+    }
+
+    .visit-text p {
+        margin: .5rem 0;
+    }
+
+    .map {
+        overflow: auto;
+    }
 }
