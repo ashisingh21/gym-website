@@ -8,4 +8,15 @@ function myFunction() {
     document.getElementById("myBar").style.width = scrolled + "%";
 }
 
+var icon = document.getElementsByClassName("icon");
+
+icon.addEventListener("click", navbarResponsive = () => {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+)
 

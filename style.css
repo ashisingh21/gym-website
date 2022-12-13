@@ -39,23 +39,24 @@ body {
     z-index: 1;
     top: 0;
 
+
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0;
     display: flex;
     justify-content: space-around;
 
 }
 
-li {
+.navbar-links a {
     float: right;
 
 }
 
-.navbar-links li a {
+.navbar-links a {
     display: block;
     color: black;
     text-align: center;
@@ -63,18 +64,15 @@ li {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-.navbar-links {
-    display: inline-block;
-
+.navbar-links a:hover {
+    background-color: #D7393E;
+    color: white;
 }
 
 .gym-title {
     text-align: center;
     display: flex;
+    margin: 1rem 0;
 }
 
 .navbar-img {
@@ -82,12 +80,13 @@ li a:hover {
     max-width: 20%;
     max-height: 90%;
 
+
 }
 
 .fitness a {
     font-size: 2rem;
     font-weight: 700;
-    margin-right: 0.5rem;
+    margin: .5rem .5rem .5rem 0;
     padding: 0;
     color: black;
     text-align: center;
@@ -148,6 +147,15 @@ li a:hover {
     bottom: 6.9rem;
     background-color: #FFB546;
 }
+
+/* Navbar-Responsive */
+
+
+.navbar-links .icon {
+    display: none;
+
+}
+
 
 /* Hero Section */
 
@@ -455,14 +463,39 @@ i {
 
 @media screen and (max-width: 480px) {
 
-
-
-
-
-
     .heading {
         font-size: 1.8rem;
     }
+
+    /* Navbar Responsive */
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    /* Navbar responsive close */
+
 
 
     .hero-section {
