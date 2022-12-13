@@ -503,19 +503,15 @@ i {
     }
 
 
-
     /* UL that comes after clicking the icons */
     .topnav.responsive {
-
-        margin-top: 3rem;
+        margin: 1rem .8rem;
 
     }
 
 
     /* icon of that UL that comes after clicking */
     .topnav.responsive a.icon {
-        display: block;
-        color: #D7393E;
         position: absolute;
 
     }
@@ -525,13 +521,16 @@ i {
 /* Individual a's of that UL that comes after clicking */
 
 .topnav.responsive a {
-    float: none;
+
     display: block;
     text-align: left;
     color: #1F2025;
     text-decoration: none;
-    margin: 00.1rem;
+    margin: 0.1rem;
+
 }
+
+
 
 /* Navbar responsive close */
 
@@ -636,5 +635,4 @@ i {
 
 .map {
     overflow: auto;
-}
 }
