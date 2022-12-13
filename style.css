@@ -467,7 +467,7 @@ i {
         font-size: 1.8rem;
     }
 
-    .navbar ul {
+    /* .navbar ul {
         margin: 0;
         padding: 0;
     }
@@ -483,156 +483,169 @@ i {
         left: 150px;
         top: 20px;
         scale: 1.2;
+    } */
+
+    ul {
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    /* Navbar Responsive */
+    .icon {
+        margin: 1.5rem 1rem;
+    }
 
 
-    /* Hides the original ul */
-    .topnav a:not(:first-child) {
+    .navbar-links {
         display: none;
     }
 
-    /* Icon before clicking */
-    .topnav a.icon {
-        float: right;
+    .navbar-links.show {
+        display: inline-block;
+        height: 100vh;
+        position: absolute;
+        top: 7.4rem;
+        right: 0;
+        border-radius: 10px;
+        background-color: #1F2025;
+    }
+
+    .navbar-links li a {
         display: block;
         color: #D7393E;
-        position: absolute;
-        right: 10px;
+        padding: 2rem;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: .2rem 0;
+    }
+
+    .navbar-links li {
+        margin: .8rem .2rem;
+        text-align: center;
+
+    }
+
+    .gym-title {
+        align-items: center;
+    }
+
+    .fitness,
+    .navbar-img {
+        display: inline-block;
+        width: fit-content;
+        position: relative;
+    }
+
+    .fitness {
+        margin: 1rem 0.5rem 1rem .3rem;
+    }
+
+    .navbar-img {
+        margin: 0;
+        height: max-content;
+
     }
 
 
-    /* UL that comes after clicking the icons */
-    .topnav.responsive {
-        margin: 1rem .8rem;
 
+
+    .hero-section {
+        background-position: center;
+        background-image: url(https://images.unsplash.com/photo-1590487988256-9ed24133863e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=428&q=80);
+        padding-top: 3rem;
+        align-items: center;
+        width: auto;
+    }
+
+    .hero-section-text {
+        margin: 2rem;
     }
 
 
-    /* icon of that UL that comes after clicking */
-    .topnav.responsive a.icon {
-        position: absolute;
+
+    .hero-section-heading {
+        font-size: 2rem;
+        margin: 9rem .5rem .5rem;
 
     }
-}
+
+    .welcome {
+        flex-direction: column;
+        margin: 2.5rem;
+    }
+
+    .welcome-text {
+        margin: 0;
+    }
+
+    .why-workout {
+        padding: 2.5rem;
+    }
+
+    .why-workout-items {
+        flex-direction: column;
+    }
 
 
-/* Individual a's of that UL that comes after clicking */
+    .why-workout-item {
+        margin: 2rem 0;
+    }
 
-.topnav.responsive a {
+    .testimonial-items {
+        flex-direction: column;
+        margin: 0;
+    }
 
-    display: block;
-    text-align: left;
-    color: #1F2025;
-    text-decoration: none;
-    margin: 0.1rem;
+    .testimonial-section {
+        margin: 4rem;
+    }
 
-}
+    .testimonial-item {
+        margin: 2rem 0;
+    }
 
+    .classes {
+        padding: 4rem;
+    }
 
+    .classes-images {
+        flex-direction: column;
+    }
 
-/* Navbar responsive close */
+    .classes-image {
+        margin: 2rem 0;
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
 
+    .social {
+        margin: 2rem;
+    }
 
+    .numbers {
+        flex-direction: column;
+        padding: 2.5rem;
+    }
 
-.hero-section {
-    background-position: center;
-    background-image: url(https://images.unsplash.com/photo-1590487988256-9ed24133863e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=428&q=80);
-    padding-top: 3rem;
-    align-items: center;
-    width: auto;
-}
+    .num-desc {
+        color: antiquewhite;
+        font-size: 1.2rem;
+    }
 
-.hero-section-text {
-    margin: 2rem;
-}
+    .number-col {
+        margin: 2rem 0;
+    }
 
+    .visit-us {
+        flex-direction: column;
+        margin: 2rem 2rem 0;
+    }
 
+    .visit-text p {
+        margin: .5rem 0;
+    }
 
-.hero-section-heading {
-    font-size: 2rem;
-    margin: 9rem .5rem .5rem;
-
-}
-
-.welcome {
-    flex-direction: column;
-    margin: 2.5rem;
-}
-
-.welcome-text {
-    margin: 0;
-}
-
-.why-workout {
-    padding: 2.5rem;
-}
-
-.why-workout-items {
-    flex-direction: column;
-}
-
-
-.why-workout-item {
-    margin: 2rem 0;
-}
-
-.testimonial-items {
-    flex-direction: column;
-    margin: 0;
-}
-
-.testimonial-section {
-    margin: 4rem;
-}
-
-.testimonial-item {
-    margin: 2rem 0;
-}
-
-.classes {
-    padding: 4rem;
-}
-
-.classes-images {
-    flex-direction: column;
-}
-
-.classes-image {
-    margin: 2rem 0;
-    max-width: 100%;
-    position: relative;
-    overflow: auto;
-}
-
-.social {
-    margin: 2rem;
-}
-
-.numbers {
-    flex-direction: column;
-    padding: 2.5rem;
-}
-
-.num-desc {
-    color: antiquewhite;
-    font-size: 1.2rem;
-}
-
-.number-col {
-    margin: 2rem 0;
-}
-
-.visit-us {
-    flex-direction: column;
-    margin: 2rem 2rem 0;
-}
-
-.visit-text p {
-    margin: .5rem 0;
-}
-
-.map {
-    overflow: auto;
+    .map {
+        overflow: auto;
+    }
 }
