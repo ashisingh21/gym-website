@@ -467,135 +467,174 @@ i {
         font-size: 1.8rem;
     }
 
+    .navbar ul {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .fitness a {
+        color: #D7393E;
+        margin: 1rem 0 1rem -4rem;
+    }
+
+    .navbar-img {
+        position: absolute;
+        left: 150px;
+        top: 20px;
+        scale: 1.2;
+    }
+
     /* Navbar Responsive */
 
+
+    /* Hides the original ul */
     .topnav a:not(:first-child) {
         display: none;
     }
 
+    /* Icon before clicking */
     .topnav a.icon {
         float: right;
         display: block;
-    }
-
-    .topnav.responsive {
-        position: relative;
-    }
-
-    .topnav.responsive a.icon {
+        color: #D7393E;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 10px;
     }
 
-    .topnav.responsive a {
-        float: none;
+
+
+    /* UL that comes after clicking the icons */
+    .topnav.responsive {
+
+        margin-top: 3rem;
+
+    }
+
+
+    /* icon of that UL that comes after clicking */
+    .topnav.responsive a.icon {
         display: block;
-        text-align: left;
-    }
-
-    /* Navbar responsive close */
-
-
-
-    .hero-section {
-        background-position: center;
-        background-image: url(https://images.unsplash.com/photo-1590487988256-9ed24133863e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=428&q=80);
-        padding-top: 3rem;
-        align-items: center;
-        width: auto;
-    }
-
-    .hero-section-text {
-        margin: 2rem;
-    }
-
-
-
-    .hero-section-heading {
-        font-size: 2rem;
-        margin: 9rem .5rem .5rem;
+        color: #D7393E;
+        position: absolute;
 
     }
-
-    .welcome {
-        flex-direction: column;
-        margin: 2.5rem;
-    }
-
-    .welcome-text {
-        margin: 0;
-    }
-
-    .why-workout {
-        padding: 2.5rem;
-    }
-
-    .why-workout-items {
-        flex-direction: column;
-    }
+}
 
 
-    .why-workout-item {
-        margin: 2rem 0;
-    }
+/* Individual a's of that UL that comes after clicking */
 
-    .testimonial-items {
-        flex-direction: column;
-        margin: 0;
-    }
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    color: #1F2025;
+    text-decoration: none;
+    margin: 00.1rem;
+}
 
-    .testimonial-section {
-        margin: 4rem;
-    }
+/* Navbar responsive close */
 
-    .testimonial-item {
-        margin: 2rem 0;
-    }
 
-    .classes {
-        padding: 4rem;
-    }
 
-    .classes-images {
-        flex-direction: column;
-    }
+.hero-section {
+    background-position: center;
+    background-image: url(https://images.unsplash.com/photo-1590487988256-9ed24133863e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=428&q=80);
+    padding-top: 3rem;
+    align-items: center;
+    width: auto;
+}
 
-    .classes-image {
-        margin: 2rem 0;
-        max-width: 100%;
-        position: relative;
-        overflow: auto;
-    }
+.hero-section-text {
+    margin: 2rem;
+}
 
-    .social {
-        margin: 2rem;
-    }
 
-    .numbers {
-        flex-direction: column;
-        padding: 2.5rem;
-    }
 
-    .num-desc {
-        color: antiquewhite;
-        font-size: 1.2rem;
-    }
+.hero-section-heading {
+    font-size: 2rem;
+    margin: 9rem .5rem .5rem;
 
-    .number-col {
-        margin: 2rem 0;
-    }
+}
 
-    .visit-us {
-        flex-direction: column;
-        margin: 2rem 2rem 0;
-    }
+.welcome {
+    flex-direction: column;
+    margin: 2.5rem;
+}
 
-    .visit-text p {
-        margin: .5rem 0;
-    }
+.welcome-text {
+    margin: 0;
+}
 
-    .map {
-        overflow: auto;
-    }
+.why-workout {
+    padding: 2.5rem;
+}
+
+.why-workout-items {
+    flex-direction: column;
+}
+
+
+.why-workout-item {
+    margin: 2rem 0;
+}
+
+.testimonial-items {
+    flex-direction: column;
+    margin: 0;
+}
+
+.testimonial-section {
+    margin: 4rem;
+}
+
+.testimonial-item {
+    margin: 2rem 0;
+}
+
+.classes {
+    padding: 4rem;
+}
+
+.classes-images {
+    flex-direction: column;
+}
+
+.classes-image {
+    margin: 2rem 0;
+    max-width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.social {
+    margin: 2rem;
+}
+
+.numbers {
+    flex-direction: column;
+    padding: 2.5rem;
+}
+
+.num-desc {
+    color: antiquewhite;
+    font-size: 1.2rem;
+}
+
+.number-col {
+    margin: 2rem 0;
+}
+
+.visit-us {
+    flex-direction: column;
+    margin: 2rem 2rem 0;
+}
+
+.visit-text p {
+    margin: .5rem 0;
+}
+
+.map {
+    overflow: auto;
+}
 }
