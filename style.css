@@ -51,20 +51,25 @@ ul {
 
 }
 
-.navbar-links a {
-    float: right;
-
+.navbar-links {
+    display: flex;
 }
 
-.navbar-links a {
+/* .navbar-links li a {
+    float: right;
+
+} */
+
+.navbar-links li a {
     display: block;
     color: black;
     text-align: center;
     padding: .9rem 1rem;
     text-decoration: none;
+    line-height: 3;
 }
 
-.navbar-links a:hover {
+.navbar-links li a:hover {
     background-color: #D7393E;
     color: white;
 }
@@ -499,7 +504,7 @@ i {
         display: none;
     }
 
-    .navbar-links.show {
+    .navbar-links {
         display: inline-block;
         height: 100vh;
         position: absolute;
