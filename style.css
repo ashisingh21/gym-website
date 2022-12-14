@@ -51,16 +51,15 @@ ul {
 
 }
 
-.navbar-links {
+#navbar-links {
     display: flex;
 }
 
-/* .navbar-links li a {
-    float: right;
+#closebtn {
+    display: none;
+}
 
-} */
-
-.navbar-links li a {
+#navbar-links li a {
     display: block;
     color: black;
     text-align: center;
@@ -69,7 +68,7 @@ ul {
     line-height: 3;
 }
 
-.navbar-links li a:hover {
+#navbar-links li a:hover {
     background-color: #D7393E;
     color: white;
 }
@@ -466,29 +465,13 @@ i {
 }
 
 
+/* ----------------------------------------------------------Mobile Responsive----------------------------------------------------- */
+
 @media screen and (max-width: 480px) {
 
     .heading {
         font-size: 1.8rem;
     }
-
-    /* .navbar ul {
-        margin: 0;
-        padding: 0;
-    }
-
-
-    .fitness a {
-        color: #D7393E;
-        margin: 1rem 0 1rem -4rem;
-    }
-
-    .navbar-img {
-        position: absolute;
-        left: 150px;
-        top: 20px;
-        scale: 1.2;
-    } */
 
     ul {
         justify-content: space-evenly;
@@ -498,14 +481,27 @@ i {
     .icon {
         display: block;
         margin: 1.5rem 1rem;
+        color: #D7393E;
     }
 
 
-    .navbar-links {
+
+
+    #closebtn {
         display: none;
+        position: absolute;
+        color: #D7393E;
+        top: 0;
+        right: 0;
+        margin: 1.5rem;
     }
 
-    /* .navbar-links {
+    #closebtn i {
+        font-size: 3rem;
+    }
+
+
+    #navbar-links {
         display: inline-block;
         height: 100vh;
         position: absolute;
@@ -513,18 +509,19 @@ i {
         right: 0;
         border-radius: 10px;
         background-color: #1F2025;
-    } */
+        width: 0;
+    }
 
-    .navbar-links li a {
+    #navbar-links li a {
         display: block;
         color: #D7393E;
-        padding: 2rem;
+        padding: 0;
         font-weight: 500;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         margin: .2rem 0;
     }
 
-    .navbar-links li {
+    #navbar-links li {
         margin: .8rem .2rem;
         text-align: center;
 
@@ -554,16 +551,35 @@ i {
 
 
 
+
+
     .hero-section {
         background-position: center;
-        background-image: url(https://images.unsplash.com/photo-1590487988256-9ed24133863e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=428&q=80);
+        background-image: url(https://images.unsplash.com/photo-1581122584612-713f89daa8eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);
         padding-top: 3rem;
+        background-position: top;
         align-items: center;
         width: auto;
+        margin: 7rem 0 0 0;
+        position: relative;
     }
+
+    .hero-section .color-overlay {
+        background-color: #1F2025;
+        opacity: .6;
+        height: 100%;
+        position: absolute;
+        top: 0;
+
+
+    }
+
+
 
     .hero-section-text {
         margin: 2rem;
+        position: relative;
+        z-index: 1;
     }
 
 
@@ -574,13 +590,17 @@ i {
 
     }
 
+    /* Welcome Section ------------------------------------ */
+
     .welcome {
-        flex-direction: column;
+        flex-direction: column-reverse;
         margin: 2.5rem;
     }
 
     .welcome-text {
-        margin: 0;
+
+        align-items: center;
+        margin: .7rem 0 0 0;
     }
 
     .welcome-button {
@@ -588,6 +608,15 @@ i {
         width: fit-content;
         margin: 1rem 0;
     }
+
+    .welcome-text .section-desc {
+        margin: 0 1rem;
+        text-align: center;
+    }
+
+
+
+    /* Why Workout Section------------------------------------ */
 
     .why-workout {
         padding: 2.5rem;

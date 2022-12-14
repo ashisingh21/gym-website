@@ -9,7 +9,19 @@ function onMyScroll() {
 }
 
 
-function showNav() {
-    var navbarList = document.getElementsByClassName("navbar-links");
-    navbarList.classList.add("show")
-}
+var openNav = document.getElementById("openNav");
+var closenav = document.getElementById("closebtn");
+
+openNav.addEventListener('click', showNav = () => {
+    document.getElementById("navbar-links").style.width = "100%"
+    openNav.style.display = "none";
+    closenav.style.display = "block";
+})
+
+closenav.addEventListener('click', hideNav = () => {
+    document.getElementById("navbar-links").style.width = "0%"
+    openNav.style.display = "block";
+    closenav.style.display = "none";
+})
+
+

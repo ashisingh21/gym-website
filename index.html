@@ -24,25 +24,18 @@
                 <img class="navbar-img" src="images/gym-logo.webp" alt="">
 
             </div>
-            <div class="icon"><i class="fa fa-bars"></i></div>
+            <div class="icon" id="openNav"><i class="fa fa-bars"></i></div>
 
-            <div class="navbar-links">
-
-
-                <li><a href="#home">Home</a></li>
-
-
-
-                <li><a href="#about">Single Group</a></li>
-
-
-                <li><a href="#contact">Groups</a></li>
-                <li><a href="#news">The Gym</a></li>
-                <li><a href="#about">News</a></li>
-                <li><a href="#about">Contact</a></li>
-
-
-
+            <div class="overlay">
+                <a href="javascript:void(0)" id="closebtn"><i class="fa-solid fa-xmark"></i></a>
+                <div id="navbar-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Single Group</a></li>
+                    <li><a href="#contact">Groups</a></li>
+                    <li><a href="#news">The Gym</a></li>
+                    <li><a href="#about">News</a></li>
+                    <li><a href="#about">Contact</a></li>
+                </div>
             </div>
         </ul>
 
@@ -59,6 +52,7 @@
     </div>
 
     <div class="hero-section">
+        <div class="color-overlay"></div>
         <div class="hero-section-text">
             <h1 class="hero-section-heading">A Cutting-edge <br> Fitness Gym</h1>
             <p class="hero-section-desc">Welcome to a Gym where training happens in a different way. Get active <br> and
